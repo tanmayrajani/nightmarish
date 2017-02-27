@@ -7,7 +7,7 @@ var nightmare = Nightmare({
 });
 
 nightmare
-  .goto('http://www.footlocker.com/product/model:236830/sku:S80686/adidas-ultra-boost-womens/')
+  .goto('http://www.google.com')
   .type('#lst-ib', process.argv[2] ? process.argv[2] : 'tanmay rajani')
   // .type('body', '\u000d')
   .click('.sbico-c#_fZl')
