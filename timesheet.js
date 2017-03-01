@@ -10,7 +10,7 @@ var timesheetURL = '<timesheet Login URL here>'
 nightmare
   .goto(timesheetURL)
   .type('div#idPrimaryContent > form:nth-child(2) > div.clsLoginForm:nth-child(1) > table:nth-child(2) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(2) > input:nth-child(1)', process.argv[2])
-  .type('div#idPrimaryContent > form:nth-child(2) > div.clsLoginForm:nth-child(1) > table:nth-child(2) > tbody:nth-child(1) > tr:nth-child(2) > td:nth-child(2) > input:nth-child(1)', process.argv[2].split(".")[0] + ".ishi")
+  .type('div#idPrimaryContent > form:nth-child(2) > div.clsLoginForm:nth-child(1) > table:nth-child(2) > tbody:nth-child(1) > tr:nth-child(2) > td:nth-child(2) > input:nth-child(1)', process.argv[2])
   .click('div#idPrimaryContent > form:nth-child(2) > div.clsLoginForm:nth-child(1) > p:nth-child(3) > input.clsButton:nth-child(1)')
   .wait('div#idTab_0 a')
   .click('div#idTab_0 a')
